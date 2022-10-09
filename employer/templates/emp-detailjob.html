@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{%block body_block%}
+<div style="padding-left:100px;padding-top:50px;">
+    <div class="card" style="width: 18rem;">
+<!--  <img src="..." class="card-img-top" alt="...">-->
+  <div class="card-body">
+    <h3 class="card-title">{{job.job_title}}</h3>
+    <p class="card-text">company:{{job.company_name}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">location:{{job.location}}</li>
+    <li class="list-group-item">salary:{{job.salary}}</li>
+    <li class="list-group-item">experience:{{job.experience}}</li>
+  </ul>
+
+</div>
+</div>
+
+{%endblock%}
