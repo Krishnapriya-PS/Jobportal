@@ -15,30 +15,32 @@
     <body>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">JOBPORTAL</div>
-                <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{%url 'emp-addjob'%}">ADDJOB</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{%url 'emp-alljobs'%}">LIST JOB</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+            <div class="border-end bg-primary" id="sidebar-wrapper">
+                <div style="font-size:30px;font-family: Fantasy;color: white;
+  text-shadow: 2px 2px 4px #000000;background-color:#0063B2FF;" class="sidebar-heading border-bottom bg-primary">JOBPORTAL</div>
+                <div class="list-group list-group-flush fs-5" style="font-family:serif; color: white;
+  text-shadow: 1px 1px 1px #000000;">
+                    <a style="color:white;font-weight:bold;" class="list-group-item list-group-item-action list-group-item bg-primary p-3" href="{%url 'emp-addjob'%}">ADDJOB</a>
+                    <a style="color:white;font-weight:bold;" class="list-group-item list-group-item-action list-group-item bg-primary p-3" href="{%url 'emp-alljobs'%}">LIST JOB</a>
+                    <a style="color:white;font-weight:bold;" class="list-group-item list-group-item-action list-group-item bg-primary p-3" href="#!">OVERVIEW</a>
+                    <a style="color:white;font-weight:bold;" class="list-group-item list-group-item-action list-group-item bg-primary p-3" href="#!">EVENTS</a>
+                    <a style="color:white;font-weight:bold;" class="list-group-item list-group-item-action list-group-item bg-primary p-3" href="#!">DEATILS</a>
+                    <a style="color:white;font-weight:bold;" class="list-group-item list-group-item-action list-group-item bg-primary p-3" href="#!">STATUS</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
             <div id="page-content-wrapper">
                 <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <nav style="background-color:#9CC3D5FF;" class="navbar navbar-expand-lg   border-bottom">
                     <div class="container-fluid">
-                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+<!--                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>-->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item active"><a class="nav-link" href="{%url 'emp-home'%}">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{request.user}}</a>
+                                <li  class="nav-item active fs-3 "><a style="font-weight:normal; color:white;padding-right:30px;font-family:fantasy;text-shadow: 1px 1px 1px #000000;" class="nav-link" href="{%url 'emp-home'%}">HOME</a></li>
+                                <li class="nav-item fs-3 "><a style="font-weight:normal; color:white;padding-right:30px;font-family:fantasy;text-shadow: 1px 1px 1px #000000;" class="nav-link" href="#!">LINK</a></li>
+                                <li class="nav-item dropdown fs-3 ">
+                                    <a style="font-weight:normal; color:white;padding-right:30px;font-family:fantasy;text-shadow: 1px 1px 1px #000000;" class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{request.user}}</a>
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#!">Change password</a>
                                         <a class="dropdown-item" href="#!">Another</a>

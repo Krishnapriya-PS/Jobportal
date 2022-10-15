@@ -6,6 +6,14 @@ class JobForm(forms.ModelForm):
     class Meta:
         model=Jobs
         fields="__all__"
+        widgets={
+            'job_title':forms.TextInput(attrs={'class':'form-control','size':10}),
+            'company_name': forms.TextInput(attrs={'class': 'form-control','size':10}),
+            'location': forms.TextInput(attrs={'class': 'form-control','size':10}),
+            'salary': forms.NumberInput(attrs={'class': 'form-control','size':10}),
+            'experience': forms.NumberInput(attrs={'class': 'form-control','size':10})
+
+        }
 
 class SignupForm(UserCreationForm):
     class Meta:
