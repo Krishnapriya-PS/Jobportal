@@ -20,6 +20,12 @@ class SignupForm(UserCreationForm):
         model=User
         fields=["username","email","password1","password2","first_name","last_name"]
 
+
 class LoginForm(forms.Form):
     username=forms.CharField()
     password=forms.CharField(widget=forms.PasswordInput())
+
+
+
+
+

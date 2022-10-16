@@ -1,19 +1,21 @@
 {%extends 'base.html'%}
 {%block body_block%}
-<div style="padding-left:100px;padding-top:50px;">
-    <div class="card" style="width: 18rem;">
+<div style="padding-left:300px;padding-top:100px;">
+    <div class="card" style="width: 32rem;border:2px solid darkgrey;">
 <!--  <img src="..." class="card-img-top" alt="...">-->
-  <div class="card-body">
-    <h3 class="card-title">{{job.job_title}}</h3>
-    <p class="card-text">company:{{job.company_name}}</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">location:{{job.location}}</li>
-    <li class="list-group-item">salary:{{job.salary}}</li>
-    <li class="list-group-item">experience:{{job.experience}}</li>
-  </ul>
+      <div class="card-body bg-white">
+        <h3 class="card-title" style="font-family:serif;font-size:30px;text-align:center;color:#02198B;font-weight:bold;">{{job.job_title}}</h3></div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-light" style="text-align:center;height:4rem;"><span style="font-family:serif;font-size:18px;">Company : </span><span style="font-family:serif;font-size:20px;">{{job.company_name}}</span></li>
+        <li class="list-group-item bg-light" style="text-align:center;height:4rem;"><span style="font-family:serif;font-size:18px;">Location : </span><span style="font-family:serif;font-size:20px;">{{job.location}}</span></li>
+        <li class="list-group-item bg-light" style="text-align:center;height:4rem;"><span style="font-family:serif;font-size:18px;">Salary : </span><span style="font-family:serif;font-size:20px;">{{job.salary}}</span></li>
+        <li class="list-group-item bg-light" style="text-align:center;height:4rem;"><span style="font-family:serif;font-size:18px;">Experience : </span><span style="font-family:serif;font-size:20px;">{{job.experience}}</span></li>
 
-</div>
+
+
+
+      </ul>
+    </div>
 </div>
 
 {%endblock%}
